@@ -12,6 +12,10 @@
 		E4E2B20E2293383B001E28C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E2B20D2293383B001E28C1 /* Assets.xcassets */; };
 		E4E2B2112293383B001E28C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E2B20F2293383B001E28C1 /* LaunchScreen.storyboard */; };
 		E4E2B2142293383B001E28C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2B2132293383B001E28C1 /* main.m */; };
+		E4E2B22B22935158001E28C1 /* WAMEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2B22A22935158001E28C1 /* WAMEntry.m */; };
+		E4E2B22E22935211001E28C1 /* WAMEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2B22D22935211001E28C1 /* WAMEntryController.m */; };
+		E4E2B2312293540F001E28C1 /* WAMEntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2B2302293540F001E28C1 /* WAMEntryListTableViewController.m */; };
+		E4E2B23422935929001E28C1 /* WAMEntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E2B23322935929001E28C1 /* WAMEntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,14 @@
 		E4E2B2102293383B001E28C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4E2B2122293383B001E28C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E2B2132293383B001E28C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4E2B22922935158001E28C1 /* WAMEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAMEntry.h; sourceTree = "<group>"; };
+		E4E2B22A22935158001E28C1 /* WAMEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAMEntry.m; sourceTree = "<group>"; };
+		E4E2B22C22935211001E28C1 /* WAMEntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAMEntryController.h; sourceTree = "<group>"; };
+		E4E2B22D22935211001E28C1 /* WAMEntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAMEntryController.m; sourceTree = "<group>"; };
+		E4E2B22F2293540F001E28C1 /* WAMEntryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAMEntryListTableViewController.h; sourceTree = "<group>"; };
+		E4E2B2302293540F001E28C1 /* WAMEntryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAMEntryListTableViewController.m; sourceTree = "<group>"; };
+		E4E2B23222935929001E28C1 /* WAMEntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAMEntryDetailViewController.h; sourceTree = "<group>"; };
+		E4E2B23322935929001E28C1 /* WAMEntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAMEntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,8 @@
 		E4E2B21D22933869001E28C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E4E2B22922935158001E28C1 /* WAMEntry.h */,
+				E4E2B22A22935158001E28C1 /* WAMEntry.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +117,8 @@
 		E4E2B21E2293386E001E28C1 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E4E2B22C22935211001E28C1 /* WAMEntryController.h */,
+				E4E2B22D22935211001E28C1 /* WAMEntryController.m */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -110,6 +126,10 @@
 		E4E2B21F22933875001E28C1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E4E2B22F2293540F001E28C1 /* WAMEntryListTableViewController.h */,
+				E4E2B2302293540F001E28C1 /* WAMEntryListTableViewController.m */,
+				E4E2B23222935929001E28C1 /* WAMEntryDetailViewController.h */,
+				E4E2B23322935929001E28C1 /* WAMEntryDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -140,6 +160,7 @@
 		E4E2B1F92293383A001E28C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WAM;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = devmtn;
 				TargetAttributes = {
@@ -184,8 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E2B23422935929001E28C1 /* WAMEntryDetailViewController.m in Sources */,
+				E4E2B22B22935158001E28C1 /* WAMEntry.m in Sources */,
 				E4E2B2142293383B001E28C1 /* main.m in Sources */,
+				E4E2B22E22935211001E28C1 /* WAMEntryController.m in Sources */,
 				E4E2B2062293383A001E28C1 /* AppDelegate.m in Sources */,
+				E4E2B2312293540F001E28C1 /* WAMEntryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
